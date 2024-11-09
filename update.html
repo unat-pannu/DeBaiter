@@ -1,0 +1,101 @@
+<html>
+<meta charset="UTF-8">
+<head>
+<link rel="stylesheet" type="text/css" href="debaiter.css">
+<style>
+*{text-align:left;}
+body{background-color:black;color:white;}
+.container{
+margin-top:80px;
+width:70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border:1px solid gray;}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color:black;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color:#288C8A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-align:center;
+}
+
+.signupbtn:hover{
+  background-color:#2A4E4D;
+  }
+.cancelbtn:hover {
+  background-color:red;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: white;
+  color:black;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+}
+</style>
+</head>
+<body>
+<form action="update.php" method="post">
+  <div class="container">
+    <h1 style="color:#288C8A" class="headings">Forgot Password</h1>
+    <p>Fill in the form to update your password.</p>
+    <hr>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>New Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" minlength=8 required>
+
+    <label for="psw-repeat"><b>Repeat New Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p><a href="delete.html" style="color:#288C8A">Delete account</a></p>
+
+    <div class="clearfix">
+      <a href="login.html"><button type="button" class="cancelbtn">Cancel</button></a>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</body>
+<html>

@@ -1,0 +1,92 @@
+<html> 
+<head>
+<link rel="stylesheet" href="debaiter.css">
+<style>
+*{color:black;}
+hr{width:70%;border-top:10px solid black;}
+td{border:2px solid;border-collapse:collapse;}
+h1{text-align:center;font-size:60;padding-top:30;color:black;}
+.menu li a{color:black;}
+</style>
+<script>
+function selectPlan(plan) {
+    document.getElementById('demo1').innerHTML=plan=='STARTER PLAN' ? 'STARTER PLAN (Selected)' : 'STARTER PLAN';
+    document.getElementById('demo2').innerHTML=plan=='PROFESSIONAL PLAN' ? 'PROFESSIONAL PLAN (Selected)' : 'PROFESSIONAL PLAN';
+    document.getElementById('demo3').innerHTML=plan=='ENTERPRISE PLAN' ? 'ENTERPRISE PLAN (Selected)' : 'ENTERPRISE PLAN';
+    document.getElementById('demo4').innerHTML=plan==='CUSTOM PLAN' ? 'CUSTOM PLAN (Selected)' : 'CUSTOM PLAN';
+}
+</script>
+<title> PRICING </title>
+</head>
+<body>
+<div class="menu">
+<ul>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="debaiter.html">Home</a></li>
+</div>
+<br>
+<div>
+<h1>PRICING</h1>
+<hr>
+<br>
+<h3> Choose the Plan That's Right For You </h3>
+<p>At DeBaiter, we offer flexible pricing plans to suit the needs of organizations of all sizes. Whether you are hosting small debates or large-scale events, we have a plan for you.</p>
+</div>
+<br>
+<br>
+<table>
+<tr>
+<th id='demo1'>STARTER PLAN</th>
+<th id='demo2'>PROFESSIONAL PLAN</th>
+<th id='demo3'>ENTERPRISE PLAN</th>
+<th id='demo4'>CUSTOM PLAN</th>
+</tr>
+<tr>
+<td> Ideal for individuals and small groups just getting started with debate management. </td>
+<td> Perfect for medium-sized organisations that need advanced features and more flexibility. </td>
+<td> Best for large organizations and institutions hosting frequent, large-scale debates. </td>
+<td> Contact us for a quote. Tailored solutions for unique needs and large-scale events. </td>
+</tr>
+<tr>
+<td>Host up to 5 debates per month</td>
+<td>Host up to 20 debates per month</td>
+<td>Unlimited debates</td>
+<td>All features from the Enterprise Plan</td>
+</tr>
+<tr>
+<td>Up to 10 participants per debate</td>
+<td>Up to 50 participants per debate</td>
+<td>Unlimited participants</td>
+<td>Custom integrations and additional services</td>
+</tr>
+<tr>
+<td>Basic scheduling and participant management tools</td>
+<td>Advanced scheduling and participant management tools</td>
+<td>Comprehensive management tools</td>
+<td>Personalized training and onboarding</td>
+</tr>
+<tr>
+<td>Email support</td>
+<td>Priority email support</td>
+<td>Dedicated account manager</td>
+<td>Dedicated support team</td>
+</tr>
+<tr>
+<td style="border:none">
+    <button type="button" id="button1" onclick="selectPlan('STARTER PLAN')" onmouseover="document.getElementById('button1').style.backgroundColor='#288C8A'" onmouseout="document.getElementById('button1').style.backgroundColor='black'" style="background-color:black; color:white; width:100%; padding:0">Select Plan</button>
+</td>
+<td style="border:none">
+    <button type="button" id="button2" onclick="selectPlan('PROFESSIONAL PLAN')" onmouseover="document.getElementById('button2').style.backgroundColor='#288C8A'" onmouseout="document.getElementById('button2').style.backgroundColor='black'" style="background-color:black; color:white; width:100%; padding:0">Select Plan</button>
+</td>
+<td style="border:none">
+    <button type="button" id="button3" onclick="selectPlan('ENTERPRISE PLAN')" onmouseover="document.getElementById('button3').style.backgroundColor='#288C8A'" onmouseout="document.getElementById('button3').style.backgroundColor='black'" style="background-color:black; color:white; width:100%; padding:0">Select Plan</button>
+</td>
+<td style="border:none">
+    <button type="button" id="button4" onclick="selectPlan('CUSTOM PLAN')" onmouseover="document.getElementById('button4').style.backgroundColor='#288C8A'" onmouseout="document.getElementById('button4').style.backgroundColor='black'" style="background-color:black; color:white; width:100%; padding:0">Select Plan</button>
+</td>
+</table>
+<br>
+</body>
+</html>
