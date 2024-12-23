@@ -15,7 +15,7 @@ body{color:white;text-align:center; font-family:Roboto;}
 @keyframes scroll-watcher{
 	to{scale: 1 1;}
 	}
-p,h1,h4,h3,.pholder,img,#storyhead{
+p,h1,h4,h3,.pholder,img,.story h1,.story p{
 	animation:fade-in linear;
 	animation-timeline:view(700px 0px);
 	}
